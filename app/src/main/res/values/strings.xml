@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SpendLess</string>
+    <string name="settings_title">Settings</string>
+    <string name="preferences_title">Preferences</string>
+    <string name="security_title">Security</string>
+    <string name="logout_option">Log out</string>
+    <string name="biometrics_option_title">Biometrics for PIN prompt</string>
+    <string name="session_expiry_option_title">Session expiry duration</string>
+    <string name="locked_out_option_title">Locked out duration</string>
+    <string name="save_button">Save</string>
+    <string name="expenses_format_options_title">Expenses format</string>
+    <string name="decimal_separator_options_title">Decimal separator</string>
+    <string name="thousands_separator_options_title">Thousands separator</string>
+    <string name="preview_placeholder">spend this month</string>
+</resources>
