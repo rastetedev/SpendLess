@@ -1,6 +1,6 @@
 package com.raulastete.spendless.screen.settings.preferences
 
-import com.raulastete.spendless.screen.component.Option
+import com.raulastete.spendless.screen.settings.component.Option
 
 data class PreferencesState(
     val preview: String = "",
@@ -16,6 +16,11 @@ data class PreferencesState(
         Option(id = 1, label = "1,000", value = ThousandSeparator.COMMA),
         Option(id = 2, label = "1.000", value = ThousandSeparator.PERIOD),
         Option(id = 3, label = "1 000", value = ThousandSeparator.SPACE),
+    ),
+    val currencyOptions: List<Currency> = listOf(
+        Currency(id = "USD", icon = "$", label = "US Dollar"),
+        Currency(id = "PEN", icon = "S/", label = "Peruvian Sol"),
+        Currency(id = "EUR", icon = "€", label = "Euro"),
     )
 )
 
@@ -30,3 +35,9 @@ enum class DecimalSeparator {
 enum class ThousandSeparator {
     COMMA, PERIOD, SPACE
 }
+
+data class Currency(
+    val id: String,
+    val icon: String,
+    val label: String
+)

@@ -1,6 +1,6 @@
 package com.raulastete.spendless.screen.settings.security
 
-import com.raulastete.spendless.screen.component.Option
+import com.raulastete.spendless.screen.settings.component.Option
 
 data class SecurityState(
     val biometricStatusOptions: List<Option<Boolean>> = listOf(

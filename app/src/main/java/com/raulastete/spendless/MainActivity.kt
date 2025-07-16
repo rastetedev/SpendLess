@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.raulastete.spendless.screen.registration.CreatePinScreen
+import com.raulastete.spendless.screen.settings.preferences.PreferencesScreen
 import com.raulastete.spendless.ui.theme.SpendLessTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SpendLessTheme {
-                CreatePinScreen()
+                PreferencesScreen()
             }
         }
     }

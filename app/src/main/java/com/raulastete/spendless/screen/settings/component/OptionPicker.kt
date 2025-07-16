@@ -1,4 +1,4 @@
-package com.raulastete.spendless.screen.component
+package com.raulastete.spendless.screen.settings.component
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.background

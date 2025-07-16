@@ -28,7 +28,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.raulastete.spendless.R
 import com.raulastete.spendless.screen.component.CardContainer
 import com.raulastete.spendless.screen.component.PrimaryButton
-import com.raulastete.spendless.screen.settings.security.SecuritySection
+import com.raulastete.spendless.screen.component.SectionWithSpinner
+import com.raulastete.spendless.screen.settings.component.SettingsSectionWithPicker
 import com.raulastete.spendless.ui.theme.SpendLessTheme
 import com.raulastete.spendless.ui.theme.onSurfaceVariant
 import org.koin.androidx.compose.koinViewModel
@@ -106,17 +107,30 @@ fun PreferencesContent(
                 }
             }
 
-            SecuritySection(
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.expenses_format_options_title),
                 options = state.expensesFormatOptions
             )
 
-            SecuritySection(
+            SectionWithSpinner(
+                modifier = Modifier.fillMaxWidth(),
+                title = stringResource(R.string.currency_options_title),
+                items = state.currencyOptions,
+                onItemSelected = {
+
+                },
+                selectedItem = state.currencyOptions.first(),
+                itemToString = { currency ->
+                    "${currency.icon} ${currency.label} (${currency.id})"
+                }
+            )
+
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.decimal_separator_options_title),
                 options = state.decimalSeparatorOptions
             )
 
-            SecuritySection(
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.thousands_separator_options_title),
                 options = state.thousandsSeparatorOptions
             )

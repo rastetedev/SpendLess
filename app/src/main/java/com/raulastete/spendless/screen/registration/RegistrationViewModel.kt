@@ -21,7 +21,7 @@ class RegistrationViewModel : ViewModel() {
         }
         .stateIn(
             scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(5_000L),
+            started = SharingStarted.Companion.WhileSubscribed(5_000L),
             initialValue = RegistrationUiState()
         )
 

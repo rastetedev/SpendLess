@@ -23,9 +23,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.raulastete.spendless.R
-import com.raulastete.spendless.screen.component.Option
-import com.raulastete.spendless.screen.component.OptionPicker
 import com.raulastete.spendless.screen.component.PrimaryButton
+import com.raulastete.spendless.screen.settings.component.SettingsSectionWithPicker
 import com.raulastete.spendless.ui.theme.SpendLessTheme
 import org.koin.androidx.compose.koinViewModel
 
@@ -78,17 +77,17 @@ fun SecurityContent(
                 .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            SecuritySection(
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.biometrics_option_title),
                 options = state.biometricStatusOptions
             )
 
-            SecuritySection(
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.session_expiry_option_title),
                 options = state.sessionExpiryMinutesDurationOptions
             )
 
-            SecuritySection(
+            SettingsSectionWithPicker(
                 title = stringResource(R.string.locked_out_option_title),
                 options = state.lockedOutSecondsDurationOption
             )
@@ -102,23 +101,6 @@ fun SecurityContent(
 
             }
         }
-    }
-}
-
-@Composable
-fun SecuritySection(modifier: Modifier = Modifier, title: String, options: List<Option<*>>) {
-    Column(
-        modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        Text(
-            title,
-            style = MaterialTheme.typography.labelSmall
-        )
-        OptionPicker(
-            modifier = Modifier.fillMaxWidth(),
-            options = options
-        )
     }
 }
 
