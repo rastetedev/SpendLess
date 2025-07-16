@@ -14,11 +14,13 @@ private val DarkColorScheme = darkColorScheme(
 
 private val LightColorScheme = lightColorScheme(
     primary = Primary,
+    primaryContainer = PrimaryContainer,
     onPrimary = onPrimary,
     surface = Surface,
     onSurface = onSurface,
     onSurfaceVariant = onSurfaceVariant,
     background = Background,
+    onBackground = OnBackgroundA08,
     error = Error,
     errorContainer = ErrorContainer
 )

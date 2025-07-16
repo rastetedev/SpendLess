@@ -12,4 +12,16 @@
     <string name="decimal_separator_options_title">Decimal separator</string>
     <string name="thousands_separator_options_title">Thousands separator</string>
     <string name="preview_placeholder">spend this month</string>
+    <string name="login_title">Welcome back!</string>
+    <string name="login_subtitle">Enter your login details</string>
+    <string name="username_placeholder">Username</string>
+    <string name="pin_placeholder">PIN</string>
+    <string name="login_button">Log in</string>
+    <string name="registration_button">New to SpendLess?</string>
+    <string name="create_username_title">Welcome to SpendLess!\nHow can we address you?</string>
+    <string name="create_username_subtitle">Create unique username</string>
+    <string name="next_button">Next</string>
+    <string name="login_return_button">Already have an account?</string>
+    <string name="create_pin_title">Create PIN</string>
+    <string name="create_pin_subtitle">"Use PIN to login to your account  "</string>
 </resources>

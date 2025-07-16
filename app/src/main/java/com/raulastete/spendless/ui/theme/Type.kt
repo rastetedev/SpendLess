@@ -17,11 +17,23 @@ val figTreeFontFamily = FontFamily(
 )
 
 val Typography = Typography(
+    displayMedium = TextStyle(
+        fontFamily = figTreeFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 36.sp,
+        lineHeight = 44.sp
+    ),
     headlineLarge = TextStyle(
         fontFamily = figTreeFontFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 32.sp,
         lineHeight = 40.sp
+    ),
+    headlineMedium = TextStyle(
+        fontFamily = figTreeFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 28.sp,
+        lineHeight = 34.sp
     ),
     titleLarge = TextStyle(
         fontFamily = figTreeFontFamily,
@@ -32,6 +44,12 @@ val Typography = Typography(
     titleMedium = TextStyle(
         fontFamily = figTreeFontFamily,
         fontWeight = FontWeight.SemiBold,
+        fontSize = 16.sp,
+        lineHeight = 24.sp
+    ),
+    bodyMedium = TextStyle(
+        fontFamily = figTreeFontFamily,
+        fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
         lineHeight = 24.sp
     ),
